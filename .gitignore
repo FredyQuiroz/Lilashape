@@ -1,0 +1,13 @@
+/Debug/
+/Release/
+/_Output/
+/_Intermediate/
+.vs/
+*.obj
+*.pdb
+*.lib
+*.exe
+*.aps
+*.user
+*.swf
+!media/lilashape.swf
