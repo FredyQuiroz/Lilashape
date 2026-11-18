@@ -56,6 +56,10 @@ Use the repository’s Issues to record reproducible build or startup problems.
 
 The source snapshot dates to March 18, 2009. The 2026 reconstruction restores the Serial source, wrapper, editable movie and icon from the archive, converts the Win32 solution and documents the obsolete runtime. The archived SWF from the original executable folder is included in media/.
 
+### Verification
+
+On November 19, 2026, `MSBuild lilashape.sln /m:2 /t:Rebuild /p:Configuration=Release /p:Platform=Win32 /p:PreferredToolArchitecture=x64` built both snapshots in separate directories on Windows 11 Pro build 26300 with Visual Studio Community 2026 18.11.4, MSBuild 18.11.1.51303, MSVC v145 14.51.36231, Windows SDK 10.0.26100.0. `Release\lilashape.exe` returned 0 without opening its dialog. The x86 Flash ActiveX class is missing from the host. The test selected COM215 after checking that the name had no assigned device. It sent no commands to equipment. The start screen of the archived movie appeared separately in Ruffle 0.7.1, Chrome 157.0.8103.51 headless and a disposable HTTP container in Docker Engine 29.9.2 on loopback. That check covered the opening screen. Win32 dialog events and serial exchange remain unverified.
+
 ### License
 
 The [MIT License](LICENSE) covers the application’s own code. The [third-party notices](THIRD-PARTY-NOTICES.md) list the respective components.
@@ -116,6 +120,10 @@ Usa Issues del repositorio para registrar problemas reproducibles de compilació
 ### Historia
 
 La versión de los fuentes es del 18 de marzo de 2009. La reconstrucción de 2026 recupera del respaldo los fuentes de Serial, el envoltorio, la película editable y el icono, convierte la solución Win32 y documenta el entorno de ejecución obsoleto. Se incluye en media/ el SWF que acompañaba al ejecutable del respaldo.
+
+### Verificación
+
+El 19 de noviembre de 2026, `MSBuild lilashape.sln /m:2 /t:Rebuild /p:Configuration=Release /p:Platform=Win32 /p:PreferredToolArchitecture=x64` compiló ambas versiones en carpetas separadas en Windows 11 Pro compilación 26300 con Visual Studio Community 2026 18.11.4, MSBuild 18.11.1.51303, MSVC v145 14.51.36231, Windows SDK 10.0.26100.0. `Release\lilashape.exe` devolvió 0 sin abrir su ventana. El equipo carece de la clase Flash ActiveX x86. La prueba seleccionó COM215 después de comprobar que ese nombre carecía de dispositivo. No envió órdenes a ningún equipo. La pantalla inicial de la película del respaldo apareció por separado en Ruffle 0.7.1, Chrome 157.0.8103.51 sin interfaz y un contenedor HTTP desechable en Docker Engine 29.9.2 en la interfaz local. Esa prueba cubrió la pantalla de inicio. Quedan sin verificar los eventos del diálogo Win32 y el intercambio serie.
 
 ### Licencia
 
